@@ -1,4 +1,4 @@
-export default function IconRender() {
+export default function IconRender(colorData) {
 
     const testData = [ 
         1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
@@ -13,11 +13,11 @@ export default function IconRender() {
         1, 1, 1, 1, 1, 1, 1, 1, 1, 1
     ]
 
-    const colorData = [ [255, 255, 255], 
-                        [200, 200, 200],
-                        [150, 150, 150],
-                        [100, 100, 100],
-                        [50 ,50, 50]        ]
+    // const colorData = [ [255, 255, 255], 
+    //                     [200, 200, 200],
+    //                     [150, 150, 150],
+    //                     [100, 100, 100],
+    //                     [50 ,50, 50]        ]
   
     return (
         <div>

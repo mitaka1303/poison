@@ -1,7 +1,7 @@
-export default function IconRender() {
+export default function color_mixer(color1, color2) {
 
-    const color1 = [255, 255 ,255]
-    const color2 = [0,0 ,0]
+    // const color1 = [255, 255 ,255]
+    // const color2 = [0,0 ,0]
 
     const n  = 10
     var colorData =[]
@@ -12,6 +12,7 @@ export default function IconRender() {
         colorData.push(color)
     }
     console.log(colorData)
+    return colorData
   }
 
   
