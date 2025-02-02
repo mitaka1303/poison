@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import IconRender from './icon_render'
 import color_mixer from './color_mixer'
+import Form from './form'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,6 +19,7 @@ function App() {
   return (
     <>
       <div>
+        <Form/>
         <IconRender colorData = {colorData} />
       </div>
     </>
