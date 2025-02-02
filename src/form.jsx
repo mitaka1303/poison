@@ -16,7 +16,7 @@ export default function Form(props) {
     return(
         <Box sx={{ minWidth: 120 }}>
       <FormControl fullWidth>
-        <InputLabel id="demo-simple-select-label">Age</InputLabel>
+        <InputLabel id="demo-simple-select-label">toxic</InputLabel>
         <Select
           labelId="demo-simple-select-label"
           id="demo-simple-select"
@@ -24,9 +24,9 @@ export default function Form(props) {
           label="Age"
           onChange={handleChange}
         >
-          <MenuItem value={10}>Ten</MenuItem>
-          <MenuItem value={20}>Twenty</MenuItem>
-          <MenuItem value={30}>Thirty</MenuItem>
+          <MenuItem value={10}>プロテアーゼ</MenuItem>
+          <MenuItem value={20}>アレルゲン</MenuItem>
+          <MenuItem value={30}>デンドロトキシン</MenuItem>
         </Select>
       </FormControl>
     </Box>
