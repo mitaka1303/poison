@@ -12,13 +12,13 @@ function App() {
   const color2 = [0 , 21, 100]
 
   const colorData = color_mixer(color1, color2);
-
+  console.log(colorData)
 
 
   return (
     <>
       <div>
-        <IconRender colorData = {colorData}/>
+        <IconRender colorData = {colorData} />
       </div>
     </>
   )

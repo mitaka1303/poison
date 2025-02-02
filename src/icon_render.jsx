@@ -1,4 +1,4 @@
-export default function IconRender(colorData) {
+export default function IconRender(props) {
 
     const testData = [ 
         1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
@@ -12,6 +12,8 @@ export default function IconRender(colorData) {
         1, 2, 2, 2, 2, 2, 2, 2, 2, 1,
         1, 1, 1, 1, 1, 1, 1, 1, 1, 1
     ]
+
+    var colorData = props.colorData
 
     // const colorData = [ [255, 255, 255], 
     //                     [200, 200, 200],
