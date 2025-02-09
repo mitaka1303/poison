@@ -1,6 +1,6 @@
 export default function IconRender(props) {
 
-    const square = [ 
+    const squareData = [ 
         1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
         1, 2, 2, 2, 2, 2, 2, 2, 2, 1,
         1, 2, 3, 3, 3, 3, 3, 3, 2, 1,
@@ -43,17 +43,13 @@ export default function IconRender(props) {
 
     if(props.toxic_way == 10){
         testData = crossData
-    }else{
+    }else if(props.toxic_way ==20){
         testData =circleData
+    }else if(props.toxic_way == 30){
+        testData = squareData
     }
 
     var colorData = props.colorData
-
-    // const colorData = [ [255, 255, 255], 
-    //                     [200, 200, 200],
-    //                     [150, 150, 150],
-    //                     [100, 100, 100],
-    //                     [50 ,50, 50]        ]
   
     return (
         <div>
