@@ -41,7 +41,7 @@ export default function IconRender(props) {
 
     var testData
 
-    if(props.toxic_way == "食中毒"){
+    if(props.toxic_way == 10){
         testData = crossData
     }else{
         testData =circleData
