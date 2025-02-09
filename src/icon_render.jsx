@@ -54,7 +54,7 @@ export default function IconRender(props) {
                 test123
             </p>
             <svg width = "100" height = "100"> { testData.map( (i, key) => {
-                const rgb = `rgb(${colorData[i]})`
+                const rgb = `rgb(${colorData[i-1]})`
                 return <rect x = {(key%10)*10} y = {(Math.floor(key/10))*10} width="10" height="10" fill= {rgb}/>
             } )}
                 
