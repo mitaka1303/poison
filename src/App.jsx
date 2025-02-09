@@ -7,7 +7,7 @@ import color_mixer from './color_mixer'
 import Form from './form'
 
 function App() {
-  const [toxic_way, set_toxic_way] = useState(0)
+  const [toxic_way, set_toxic_way] = useState(10)
 
   const color1 = [255, 2, 200]
   const color2 = [100 , 21, 100]
