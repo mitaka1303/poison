@@ -7,7 +7,7 @@ import color_mixer from './color_mixer'
 import Form from './form'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [toxic_way, set_toxic_way] = useState(0)
 
   const color1 = [255, 2, 200]
   const color2 = [100 , 21, 100]
@@ -18,8 +18,8 @@ function App() {
   return (
     <>
       <div>
-        <Form/>
-        <IconRender colorData = {colorData} />
+        <Form set_toxic_way={set_toxic_way}/>
+        <IconRender colorData = {colorData} toxic_way={toxic_way} />
       </div>
     </>
   )

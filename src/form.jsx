@@ -10,13 +10,13 @@ export default function Form(props) {
     const [age, setAge] = React.useState('');
 
   const handleChange = (event) => {
-    setAge(event.target.value);
+    props.set_toxic_way(event.target.value);
   };
 
     return(
         <Box sx={{ minWidth: 120 }}>
       <FormControl fullWidth>
-        <InputLabel id="demo-simple-select-label">toxic</InputLabel>
+        <InputLabel id="demo-simple-select-label">toxic_way</InputLabel>
         <Select
           labelId="demo-simple-select-label"
           id="demo-simple-select"
@@ -24,9 +24,9 @@ export default function Form(props) {
           label="Age"
           onChange={handleChange}
         >
-          <MenuItem value={10}>プロテアーゼ</MenuItem>
-          <MenuItem value={20}>アレルゲン</MenuItem>
-          <MenuItem value={30}>デンドロトキシン</MenuItem>
+          <MenuItem value={10}>刺毒,咬毒</MenuItem>
+          <MenuItem value={20}>粘液毒</MenuItem>
+          <MenuItem value={30}>食中毒</MenuItem>
         </Select>
       </FormControl>
     </Box>
