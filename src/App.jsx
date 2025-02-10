@@ -21,8 +21,8 @@ function App() {
     <>
       <div>
         <Form set_toxic_way={set_toxic_way}/>
-        <ToxicForm set_toxic_color1={set_toxic_color1}/>
-        <ToxicForm set_toxic_color2={set_toxic_color2}/>
+        <ToxicForm set_toxic_color={set_toxic_color1}/>
+        <ToxicForm set_toxic_color={set_toxic_color2}/>
         <IconRender colorData = {colorData} toxic_way={toxic_way} />
       </div>
     </>

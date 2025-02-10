@@ -10,7 +10,7 @@ export default function ToxicForm(props) {
     const [age, setAge] = React.useState('');
 
   const handleChange = (event) => {
-    props.set_toxic_way(event.target.value);
+    props.set_toxic_color(event.target.value);
   };
 
     return(
@@ -24,9 +24,9 @@ export default function ToxicForm(props) {
           label="Age"
           onChange={handleChange}
         >
-          <MenuItem value={10}>刺毒,咬毒</MenuItem>
-          <MenuItem value={20}>粘液毒</MenuItem>
-          <MenuItem value={30}>食中毒</MenuItem>
+          <MenuItem value={[2,255,100]}>刺毒,咬毒</MenuItem>
+          <MenuItem value={[2,255,100]}>粘液毒</MenuItem>
+          <MenuItem value={[2,255,0]}>食中毒</MenuItem>
         </Select>
       </FormControl>
     </Box>
