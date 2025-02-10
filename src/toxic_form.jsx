@@ -24,9 +24,14 @@ export default function ToxicForm(props) {
           label="Age"
           onChange={handleChange}
         >
-          <MenuItem value={[2,255,100]}>刺毒,咬毒</MenuItem>
-          <MenuItem value={[2,255,100]}>粘液毒</MenuItem>
-          <MenuItem value={[2,255,0]}>食中毒</MenuItem>
+          <MenuItem value={[2,255,100]}>ペプチド</MenuItem>
+          <MenuItem value={[2,255,100]}>プロアテーゼ</MenuItem>
+          <MenuItem value={[2,255,0]}>ホスホリパーゼ</MenuItem>
+          <MenuItem value={[2,255,100]}>テトロドトキシン</MenuItem>
+          <MenuItem value={[2,255,100]}>アミノ酸</MenuItem>
+          <MenuItem value={[2,255,0]}>バトラコトキシン</MenuItem>
+          <MenuItem value={[2,255,100]}>イボテン酸</MenuItem>
+          <MenuItem value={[2,255,100]}>ムスカリン</MenuItem>
         </Select>
       </FormControl>
     </Box>
