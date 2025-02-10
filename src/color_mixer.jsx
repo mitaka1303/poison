@@ -1,11 +1,15 @@
-export default function color_mixer(color1, color2) {
+export default function color_mixer(_color1, _color2) {
 
-    // const color1 = [255, 255 ,255]
-    // const color2 = [0,0 ,0]
+    var color1 = _color1
+    var color2 = _color2
 
     const n  = 5
     var x  = n-1
     var colorData =[]
+
+    if(JSON.stringify(color1) === JSON.stringify(color2)){
+        color2 =[255, 255, 255]
+    }
 
     for(var i = 0 ; i < n ; i++){
         // const color = [ (color1[0]* i/n ) + (color2[0]* (n-i)/n) ,  (color1[1]* i/n ) + (color2[1]* (n-i)/n),  (color1[2]* i/n ) + (color2[2]* (n-i)/n) ]
