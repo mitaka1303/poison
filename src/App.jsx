@@ -5,6 +5,7 @@ import './App.css'
 import IconRender from './icon_render'
 import color_mixer from './color_mixer'
 import Form from './form'
+import ToxicForm from './toxic_form'
 
 function App() {
   const [toxic_way, set_toxic_way] = useState(10)
@@ -20,8 +21,8 @@ function App() {
     <>
       <div>
         <Form set_toxic_way={set_toxic_way}/>
-        <toxic_form set_toxic_color1={set_toxic_color1}/>
-        <toxic_form set_toxic_color2={set_toxic_color2}/>
+        <ToxicForm set_toxic_color1={set_toxic_color1}/>
+        <ToxicForm set_toxic_color2={set_toxic_color2}/>
         <IconRender colorData = {colorData} toxic_way={toxic_way} />
       </div>
     </>

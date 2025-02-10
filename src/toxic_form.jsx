@@ -6,7 +6,7 @@ import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 
 
-export default function toxicForm(props) {
+export default function ToxicForm(props) {
     const [age, setAge] = React.useState('');
 
   const handleChange = (event) => {
@@ -24,7 +24,7 @@ export default function toxicForm(props) {
           label="Age"
           onChange={handleChange}
         >
-          <MenuItem value={[100, 200, 3]}>刺毒,咬毒</MenuItem>
+          <MenuItem value={10}>刺毒,咬毒</MenuItem>
           <MenuItem value={20}>粘液毒</MenuItem>
           <MenuItem value={30}>食中毒</MenuItem>
         </Select>
