@@ -8,9 +8,10 @@ import Select from '@mui/material/Select';
 
 export default function ToxicForm(props) {
     const [age, setAge] = React.useState('');
-
+    var toxic = props.toxic
   const handleChange = (event) => {
-    props.set_toxic_color(event.target.value);
+    props.set_toxic_color(event.target.value.color);
+    props.set_toxic(event.target.label.name)
   };
 
     return(
@@ -20,18 +21,18 @@ export default function ToxicForm(props) {
         <Select
           labelId="demo-simple-select-label"
           id="demo-simple-select"
-          value={age}
+          value={props.toxic}
           label="Age"
           onChange={handleChange}
         >
-          <MenuItem value={[22,255,10]}>ペプチド</MenuItem>
-          <MenuItem value={[200,25,10]}>プロアテーゼ</MenuItem>
-          <MenuItem value={[2,255,0]}>ホスホリパーゼ</MenuItem>
-          <MenuItem value={[200,2,100]}>テトロドトキシン</MenuItem>
-          <MenuItem value={[2,255,100]}>アミノ酸</MenuItem>
-          <MenuItem value={[200,255,0]}>バトラコトキシン</MenuItem>
-          <MenuItem value={[2,255,10]}>イボテン酸</MenuItem>
-          <MenuItem value={[2,2,100]}>ムスカリン</MenuItem>
+          <MenuItem value={ {color:[22,255,10], name:"ペプチド"}}>ペプチド</MenuItem>
+          <MenuItem value={ {color:[200,25,10], name:"プロアテーゼ"}}>プロアテーゼ</MenuItem>
+          <MenuItem value={ {color:[2,255,0], name:"ホスホリパーゼ"}}>ホスホリパーゼ</MenuItem>
+          <MenuItem value={ {color:[200,2,100], name:"テトロドトキシン"}}>テトロドトキシン</MenuItem>
+          <MenuItem value={{color:[2,255,100], name:"アミノ酸"}}>アミノ酸</MenuItem>
+          <MenuItem value={{color:[200,255,0],name: "バトラコトキシン"}}>バトラコトキシン</MenuItem>
+          <MenuItem value={{color:[2,255,10],name:"イボテン酸"}}>イボテン酸</MenuItem>
+          <MenuItem value={{color:[2,2,100], name:"ムスカリン"}}>ムスカリン</MenuItem>
         </Select>
       </FormControl>
     </Box>
