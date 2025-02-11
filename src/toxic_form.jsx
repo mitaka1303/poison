@@ -7,14 +7,13 @@ import Select from '@mui/material/Select';
 
 
 export default function ToxicForm(props) {
-  // <MenuItem value={[22,255,10]}>ペプチド</MenuItem>
-  //         <MenuItem value={[200,25,10]}>プロアテーゼ</MenuItem>
-  //         <MenuItem value={[2,255,0]}>ホスホリパーゼ</MenuItem>
-  //         <MenuItem value={[200,2,100]}>テトロドトキシン</MenuItem>
-  //         <MenuItem value={[2,255,100]}>アミノ酸</MenuItem>
-  //         <MenuItem value={[200,255,0]}>バトラコトキシン</MenuItem>
-  //         <MenuItem value={[2,255,10]}>イボテン酸</MenuItem>
-  //         <MenuItem value={[2,2,100]}>ムスカリン</MenuItem>
+  [{color:  [22,255,10] , name:'ペプチド'},
+  {color: [200,25,10] , name:'プロアテーゼ'},
+  {color:[2,255,0],name: 'ホスホリパーゼ'},
+  {color:[200,2,100], name:'テトロドトキシン'},
+  {color:[2,255,100], name:'アミノ酸'},
+  {color:[200,255,0 ] , name:'バトラコトキシン'},
+  {color:[2,2,100], name:'ムスカリン'} ]
     const [toxic, setToxic] = React.useState('');
     const handleChange = (event) => {
     props.set_toxic_color(event.target.value);
@@ -33,17 +32,15 @@ export default function ToxicForm(props) {
           onChange={handleChange}
         >
           <MenuItem value={'ペプチド'}>ペプチド</MenuItem>
-          <MenuItem value={[200,25,10]}>プロアテーゼ</MenuItem>
-          <MenuItem value={[2,255,0]}>ホスホリパーゼ</MenuItem>
-          <MenuItem value={[200,2,100]}>テトロドトキシン</MenuItem>
-          <MenuItem value={[2,255,100]}>アミノ酸</MenuItem>
-          <MenuItem value={[200,255,0]}>バトラコトキシン</MenuItem>
-          <MenuItem value={[2,255,10]}>イボテン酸</MenuItem>
-          <MenuItem value={[2,2,100]}>ムスカリン</MenuItem>
+          <MenuItem value={'プロアテーゼ'}>プロアテーゼ</MenuItem>
+          <MenuItem value={'ホスホリパーゼ'}>ホスホリパーゼ</MenuItem>
+          <MenuItem value={'テトロドトキシン'}>テトロドトキシン</MenuItem>
+          <MenuItem value={'アミノ酸'}>アミノ酸</MenuItem>
+          <MenuItem value={'バトラコトキシン'}>バトラコトキシン</MenuItem>
+          <MenuItem value={'イボテン酸'}>イボテン酸</MenuItem>
+          <MenuItem value={'ムスカリン'}>ムスカリン</MenuItem>
         </Select>
       </FormControl>
     </Box>
     )
   }
-
-  
