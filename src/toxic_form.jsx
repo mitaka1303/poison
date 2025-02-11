@@ -7,7 +7,7 @@ import Select from '@mui/material/Select';
 
 
 export default function ToxicForm(props) {
-  [{color:  [22,255,10] , name:'ペプチド'},
+  const colorData=[{color:  [22,255,10] , name:'ペプチド'},
   {color: [200,25,10] , name:'プロアテーゼ'},
   {color:[2,255,0],name: 'ホスホリパーゼ'},
   {color:[200,2,100], name:'テトロドトキシン'},
@@ -16,8 +16,17 @@ export default function ToxicForm(props) {
   {color:[2,2,100], name:'ムスカリン'} ]
     const [toxic, setToxic] = React.useState('');
     const handleChange = (event) => {
-    props.set_toxic_color(event.target.value);
     setToxic(event.target.value)
+    var found
+    colorData.map((element) => {
+      const _name = element.name
+      if(toxic  == _name){
+        found = element
+      }
+    });
+    console.log(found)
+    // props.set_toxic_color(event.target.value);
+    props.set_toxic_color(found.color);
   };
 
     return(
