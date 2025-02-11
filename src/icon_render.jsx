@@ -44,9 +44,9 @@ export default function IconRender(props) {
     if(props.toxic_way == 10){
         testData = crossData
     }else if(props.toxic_way ==20){
-        testData =circleData
+        testData =squareData
     }else if(props.toxic_way == 30){
-        testData = squareData
+        testData = circleData
     }
 
     var colorData = props.colorData
