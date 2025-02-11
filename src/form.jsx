@@ -11,6 +11,7 @@ export default function Form(props) {
 
   const handleChange = (event) => {
     props.set_toxic_way(event.target.value);
+    setAge(event.target.value)
   };
 
     return(
