@@ -30,7 +30,7 @@ export default function ToxicForm(props) {
   };
 
     return(
-        <Box sx={{ minWidth: 120 }}>
+        <Box sx={{ minWidth: 120 , m:1}}>
       <FormControl fullWidth>
         <InputLabel id="demo-simple-select-label">toxic1</InputLabel>
         <Select
